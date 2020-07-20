@@ -87,7 +87,7 @@ passport.use(new JwtStrategy(opts, (jwt_payload, done) => {
 passport.use(new FacebookStrategy({
   clientID: process.env.FACEBOOK_APP_ID,
   clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
-  callbackURL: "/auth/facebook/callback",
+  callbackURL: "https://actiar-be.herokuapp.com/auth/facebook/callback",
   profileFields: ['id', 'email', 'gender', 'link', 'locale', 'name', 'timezone', 'updated_time', 'verified']
 },
 function(accessToken, refreshToken, profile, done) {
@@ -121,7 +121,6 @@ function(accessToken, refreshToken, profile, done) {
 
 //configure mercado pago
 mercadopago.configure({
-  sandbox: true,
   access_token:  process.env.ACCESS_TOKEN
 });
 
