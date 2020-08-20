@@ -18,7 +18,7 @@
   "proxy": "http://localhost:5003",
   "dependencies": {
     "babel-node": "0.0.1-security",
-    "bcrypt": "^4.0.1",
+    "bcrypt": "^5.0.0",
     "bigint-hash": "^0.2.2",
     "body-parser": "^1.19.0",
     "compass": "^0.1.1",
