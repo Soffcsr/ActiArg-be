@@ -31,7 +31,18 @@ const gymSchema = mongoose.Schema({
         type: mongoose.Schema.ObjectId,
         ref: "activity",
       }],
-   
+    turns: [{
+        type: mongoose.Schema.ObjectId,
+        ref: "turn",
+      }],
+    publicits: [{
+        type: mongoose.Schema.ObjectId,
+        ref: "publicit",
+      }],
+    carousels: [{
+        type: mongoose.Schema.ObjectId,
+        ref: "carousel",
+      }],
     
 })
 const gym = mongoose.model('gym', gymSchema);
